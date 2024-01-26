@@ -80,7 +80,7 @@ const Register = () => {
         {/* <div className="flex justify-center gap-3 items-center">
           <Image src={logo} height={28} width={24} alt="logo" />
           <h6 className="text-xl text-primary" style={{ fontFamily: "DMSans" }}>
-            Bestaf
+            sayswitch
           </h6>
         </div> */}
         <h3

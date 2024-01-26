@@ -13,8 +13,8 @@ import QueryProviders from "@/context/query-provider";
 const DMSans = DM_Sans({ subsets: ["latin"], display: "swap" });
 
 export const metadata = {
-  title: "BestAf App",
-  description: "Official BestAf Website",
+  title: "sayswitch App",
+  description: "Official sayswitch Website",
 };
 
 export default function RootLayout({ children }) {

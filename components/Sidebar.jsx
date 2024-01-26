@@ -4,7 +4,7 @@ import Image from "next/image";
 import logo from "@/public/assets/logo.svg";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { LogoutIcon } from "./icons/LogoutIcon";
+// import { LogoutIcon } from "./icons/LogoutIcon";
 import { toast } from "react-toastify";
 import Cookies from "js-cookie";
 
@@ -35,13 +35,13 @@ const Sidebar = () => {
       <div className="px-6 py-5">
         <section className="flex justify-between items-center">
           <div className="flex gap-3 items-center">
-            <Image src={logo} height={28} width={24} alt="logo" />
-            <h6
+            <Image src={logo} height={150} width={150} alt="logo" />
+            {/* <h6
               className="text-xl text-primary"
               style={{ fontFamily: "DMSans" }}
             >
-              Bestaf
-            </h6>
+              sayswitch
+            </h6> */}
           </div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -61,7 +61,7 @@ const Sidebar = () => {
             <div
               className="flex gap-3 hover:bg-secondary group rounded-lg px-5 py-2 items-center cursor-pointer mb-[25px]"
               style={{
-                background: lastPathSegment === "user" ? "#FFEAEF" : "",
+                background: lastPathSegment === "user" ? "#5ad68030" : "",
               }}
             >
               <svg
@@ -80,7 +80,7 @@ const Sidebar = () => {
                   stroke-linejoin="round"
                   className="group-hover:stroke-primary"
                   style={{
-                    stroke: lastPathSegment === "user" ? "#941D3A" : "",
+                    stroke: lastPathSegment === "user" ? "#1f8f4f" : "",
                   }}
                 />
                 <path
@@ -91,7 +91,7 @@ const Sidebar = () => {
                   stroke-linejoin="round"
                   className="group-hover:stroke-primary"
                   style={{
-                    stroke: lastPathSegment === "user" ? "#941D3A" : "",
+                    stroke: lastPathSegment === "user" ? "#1f8f4f" : "",
                   }}
                 />
               </svg>
@@ -99,7 +99,7 @@ const Sidebar = () => {
               <h5
                 className="text-dark group-hover:text-primary text-sm"
                 style={{
-                  color: lastPathSegment === "user" ? "#941D3A" : "",
+                  color: lastPathSegment === "user" ? "#1f8f4f" : "",
                 }}
               >
                 Dashboard
@@ -110,7 +110,7 @@ const Sidebar = () => {
             <div
               className="flex gap-3 hover:bg-secondary group rounded-lg px-5 py-2 items-center cursor-pointer mb-[25px]"
               style={{
-                background: title === "terminal" ? "#FFEAEF" : "",
+                background: title === "terminal" ? "#5ad68030" : "",
               }}
             >
               <svg
@@ -129,7 +129,7 @@ const Sidebar = () => {
                   stroke-linejoin="round"
                   className="group-hover:stroke-primary"
                   style={{
-                    stroke: title === "terminal" ? "#941D3A" : "",
+                    stroke: title === "terminal" ? "#1f8f4f" : "",
                   }}
                 />
                 <path
@@ -140,7 +140,7 @@ const Sidebar = () => {
                   stroke-linejoin="round"
                   className="group-hover:stroke-primary"
                   style={{
-                    stroke: title === "terminal" ? "#941D3A" : "",
+                    stroke: title === "terminal" ? "#1f8f4f" : "",
                   }}
                 />
                 <path
@@ -151,7 +151,7 @@ const Sidebar = () => {
                   stroke-linejoin="round"
                   className="group-hover:stroke-primary"
                   style={{
-                    stroke: title === "terminal" ? "#941D3A" : "",
+                    stroke: title === "terminal" ? "#1f8f4f" : "",
                   }}
                 />
                 <path
@@ -162,7 +162,7 @@ const Sidebar = () => {
                   stroke-linejoin="round"
                   className="group-hover:stroke-primary"
                   style={{
-                    stroke: title === "terminal" ? "#941D3A" : "",
+                    stroke: title === "terminal" ? "#1f8f4f" : "",
                   }}
                 />
               </svg>
@@ -170,7 +170,7 @@ const Sidebar = () => {
               <h5
                 className="text-dark group-hover:text-primary text-sm"
                 style={{
-                  color: title === "terminal" ? "#941D3A" : "",
+                  color: title === "terminal" ? "#1f8f4f" : "",
                 }}
               >
                 Terminal
@@ -181,7 +181,7 @@ const Sidebar = () => {
             <div
               className="flex gap-3 hover:bg-secondary group rounded-lg px-5 py-2 items-center cursor-pointer mb-[25px]"
               style={{
-                background: title === "transaction" ? "#FFEAEF" : "",
+                background: title === "transaction" ? "#5ad68030" : "",
               }}
             >
               <svg
@@ -200,7 +200,7 @@ const Sidebar = () => {
                   stroke-linejoin="round"
                   className="group-hover:stroke-primary"
                   style={{
-                    stroke: title === "transaction" ? "#941D3A" : "",
+                    stroke: title === "transaction" ? "#1f8f4f" : "",
                   }}
                 />
                 <path
@@ -211,7 +211,7 @@ const Sidebar = () => {
                   stroke-linejoin="round"
                   className="group-hover:stroke-primary"
                   style={{
-                    stroke: title === "transaction" ? "#941D3A" : "",
+                    stroke: title === "transaction" ? "#1f8f4f" : "",
                   }}
                 />
                 <path
@@ -222,7 +222,7 @@ const Sidebar = () => {
                   stroke-linejoin="round"
                   className="group-hover:stroke-primary"
                   style={{
-                    stroke: title === "transaction" ? "#941D3A" : "",
+                    stroke: title === "transaction" ? "#1f8f4f" : "",
                   }}
                 />
                 <path
@@ -233,7 +233,7 @@ const Sidebar = () => {
                   stroke-linejoin="round"
                   className="group-hover:stroke-primary"
                   style={{
-                    stroke: title === "transaction" ? "#941D3A" : "",
+                    stroke: title === "transaction" ? "#1f8f4f" : "",
                   }}
                 />
               </svg>
@@ -241,7 +241,7 @@ const Sidebar = () => {
               <h5
                 className="text-dark group-hover:text-primary text-sm"
                 style={{
-                  color: title === "transaction" ? "#941D3A" : "",
+                  color: title === "transaction" ? "#1f8f4f" : "",
                 }}
               >
                 Transaction
@@ -253,7 +253,7 @@ const Sidebar = () => {
               <div
                 className="flex gap-4 hover:bg-secondary group rounded-lg px-5 py-2 items-center cursor-pointer mb-[25px]"
                 style={{
-                  background: title === "merchant" ? "#FFEAEF" : "",
+                  background: title === "merchant" ? "#5ad68030" : "",
                 }}
               >
                 {/* <svg
@@ -269,7 +269,7 @@ const Sidebar = () => {
                   fill="#4B5563"
                   className="group-hover:stroke-primary"
                   style={{
-                    stroke: title === "merchant" ? "#941D3A" : "",
+                    stroke: title === "merchant" ? "#1f8f4f" : "",
                   }}
                 />
               </svg> */}
@@ -286,7 +286,7 @@ const Sidebar = () => {
                     fill="#4B5563"
                     className="group-hover:fill-primary"
                     style={{
-                      fill: title === "merchant" ? "#941D3A" : "",
+                      fill: title === "merchant" ? "#1f8f4f" : "",
                     }}
                   />
                 </svg>
@@ -294,7 +294,7 @@ const Sidebar = () => {
                 <h5
                   className="text-dark group-hover:text-primary text-sm"
                   style={{
-                    color: title === "merchant" ? "#941D3A" : "",
+                    color: title === "merchant" ? "#1f8f4f" : "",
                   }}
                 >
                   Merchant
@@ -307,7 +307,7 @@ const Sidebar = () => {
               <div
                 className="flex gap-4 hover:bg-secondary group rounded-lg px-5 py-2 items-center cursor-pointer mb-[25px]"
                 style={{
-                  background: title === "route" ? "#FFEAEF" : "",
+                  background: title === "route" ? "#5ad68030" : "",
                 }}
               >
                 <svg
@@ -325,7 +325,7 @@ const Sidebar = () => {
                     fill="#4B5563"
                     className="group-hover:fill-primary"
                     style={{
-                      fill: title === "route" ? "#941D3A" : "",
+                      fill: title === "route" ? "#1f8f4f" : "",
                     }}
                   />
                 </svg>
@@ -333,7 +333,7 @@ const Sidebar = () => {
                 <h5
                   className="text-dark group-hover:text-primary text-sm"
                   style={{
-                    color: title === "route" ? "#941D3A" : "",
+                    color: title === "route" ? "#1f8f4f" : "",
                   }}
                 >
                   Route
@@ -347,9 +347,32 @@ const Sidebar = () => {
             className="flex gap-3 hover:bg-secondary group rounded-lg px-5 py-2 items-center cursor-pointer mb-[25px]"
             onClick={handleLogout}
           >
-            <LogoutIcon />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="21"
+              viewBox="0 0 20 21"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_1_1052)">
+                <path
+                  d="M3.33341 13H5.00008V17.1666H15.0001V3.83329H5.00008V7.99996H3.33341V2.99996C3.33341 2.77895 3.42121 2.56698 3.57749 2.4107C3.73377 2.25442 3.94573 2.16663 4.16675 2.16663H15.8334C16.0544 2.16663 16.2664 2.25442 16.4227 2.4107C16.579 2.56698 16.6667 2.77895 16.6667 2.99996V18C16.6667 18.221 16.579 18.4329 16.4227 18.5892C16.2664 18.7455 16.0544 18.8333 15.8334 18.8333H4.16675C3.94573 18.8333 3.73377 18.7455 3.57749 18.5892C3.42121 18.4329 3.33341 18.221 3.33341 18V13ZM8.33341 9.66663V7.16663L12.5001 10.5L8.33341 13.8333V11.3333H1.66675V9.66663H8.33341Z"
+                  fill="#1f8f4f"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_1_1052">
+                  <rect
+                    width="20"
+                    height="20"
+                    fill="white"
+                    transform="translate(0 0.5)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
 
-            <h5 className="text-[#EB5757] group-hover:text-primary text-sm">
+            <h5 className="text-[#1f8f4f] group-hover:text-primary text-sm">
               Log out
             </h5>
           </div>

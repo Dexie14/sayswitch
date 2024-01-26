@@ -8,8 +8,8 @@ import Link from "next/link";
 const DMSans = DM_Sans({ subsets: ["latin"], display: "swap" });
 
 export const metadata = {
-  title: "BestAf App",
-  description: "Official BestAf Website",
+  title: "sayswitch App",
+  description: "Official sayswitch Website",
 };
 
 export default function RootLayout({ children }) {
@@ -22,10 +22,10 @@ export default function RootLayout({ children }) {
         <section className="py-10 bg-[#f8f8f8]">
           <Link href={"/login"}>
         <div className="flex justify-center gap-3 items-center">
-          <Image src={logo} height={28} width={24} alt="logo" />
-          <h6 className="text-xl text-primary" style={{ fontFamily: "DMSans" }}>
-            Bestaf
-          </h6>
+          <Image src={logo} height={150} width={150} alt="logo" />
+          {/* <h6 className="text-xl text-primary" style={{ fontFamily: "DMSans" }}>
+          sayswitch
+          </h6> */}
         </div>
           </Link>
         {children}
