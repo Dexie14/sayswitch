@@ -10,6 +10,7 @@ import { signUpSchema } from "@/models/auth";
 import { useSignUp } from "@/hooks/auth/useSignUp";
 import { toast } from "react-toastify";
 import { Spinner } from "../Spinner";
+import Link from "next/link";
 
 const customStyles = {
   overlay: {
@@ -181,7 +182,9 @@ const Register = () => {
               {isPending ? <Spinner /> : "Sign Up"}
             </button>
           </div>
+          <h3 className=" mt-3 -lg flex justify-end">Already have an account? <Link href={`/login`} className="text-primary ml-2 cursor-pointer">Sign In</Link></h3>
         </form>
+        
       </div>
       <ReactModal
         isOpen={isOpen}
